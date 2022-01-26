@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Euclid Circular A Light'), local('EuclidCircularA-Light'),
+    url("../../fonts/EuclidCircular/EuclidCircularA-Light.woff2") format("woff2"),
+    url("../../fonts/EuclidCircular/EuclidCircularA-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Euclid Circular A Regular'), local('EuclidCircularA-Regular'),
+  url("../../fonts/EuclidCircular/EuclidCircularA-Regular.woff2") format("woff2"),
+  url("../../fonts/EuclidCircular/EuclidCircularA-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Euclid Circular A Medium'), local('EuclidCircularA-Medium'),
+  url("../../fonts/EuclidCircular/EuclidCircularA-Medium.woff2") format("woff2"),
+  url("../../fonts/EuclidCircular/EuclidCircularA-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Euclid Circular A SemiBold'), local('EuclidCircularA-SemiBold'),
+  url("../../fonts/EuclidCircular/EuclidCircularA-SemiBold.woff2") format("woff2"),
+  url("../../fonts/EuclidCircular/EuclidCircularA-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Euclid Circular A Bold'), local('EuclidCircularA-Bold'),
+  url("../../fonts/EuclidCircular/EuclidCircularA-Bold.woff2") format("woff2"),
+  url("../../fonts/EuclidCircular/EuclidCircularA-Bold.woff") format("woff");
+}

@@ -1,0 +1,39 @@
+.main__sort {
+  padding: 32px 42px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__compil {
+  font-size: 16px;
+  line-height: 20px;
+  color: #7e838c;
+}
+
+.main__compil b {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+  color: var(--main-font);
+  vertical-align: middle;
+}
+
+.main__sorting label {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #7e838c;
+}
+
+.main__sorting select {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--main-font);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

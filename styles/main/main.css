@@ -1,0 +1,115 @@
+@import "__filter/filter.css";
+@import "__selection/selection.css";
+
+/* main */
+
+.main {
+  padding-bottom: 190px;
+}
+
+.main__bread-crumbs {
+  font-size: 15px;
+  line-height: 19px;
+  color: #858A93;
+  margin-bottom: 65px;
+}
+
+.main__bread-crumbs a {
+  color: #2B2E34;
+}
+
+.main__bread-crumbs a[href] {
+  color: #858A93;
+}
+
+/* page */
+
+.main__title {
+  font-size: 40px;
+  line-height: 53px;
+  font-weight: 500;
+  margin-bottom: 58px;
+}
+
+/* main__catalog */
+
+.main__catalog {
+  display: flex;
+  justify-content: space-between;
+  gap: 33px;
+  margin-bottom: 190px;
+}
+
+/* main__filters */
+
+.main__filters {
+  flex-basis: 355px;
+  align-self: start;
+}
+
+.main__show-more {
+  display: none;
+}
+
+.main__seo {
+  max-width: 1095px;
+  margin: 0 auto;
+}
+
+.main__seo > p {
+  font-size: 35px;
+  line-height: 44px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.main__seo div > p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.main__seo div > p + p {
+  margin-top: 26px;
+}
+
+.main__seo div + p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-top: 52px;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 415px) {
+  .main {
+    padding-bottom: 120px;
+  }
+
+  .main__catalog {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .main__filters {
+    margin-bottom: 39px;
+  }
+
+  .main__selection {
+
+  }
+
+  .main__show-more {
+    display: block;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    background-color: transparent;
+    border: none;
+  }
+
+  .main__seo {
+    display: none;
+  }
+}

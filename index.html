@@ -5,31 +5,470 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Подключение главного файла со стилями -->
   <link rel="stylesheet" href="styles/index.css">
+
+  <script src="js/script.js" defer></script>
 
   <link rel="icon" href="favicon.svg">
 
 </head>
 <body>
 
-  <header class="header">
-    <div class="container">
+<header class="header">
+  <div class="container header__container">
+    <div class="header__top">
+      <div class="header__menu menu">
+        <div class="menu__icon">
+          <span></span>
+        </div>
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li><a href="" class="menu__link"></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.header__menu -->
 
+      <div class="header__logo logo">
+        <img class="logo__img" src="img/header/icons/logo-1.svg" alt="Логотип: ЭконУрфо">
+        <img class="logo__title" src="img/header/icons/logo-2.svg" alt="Логотип: ЭконУрфо">
+        <span class="logo__subtitle">Энергосберегающие&nbsp;&nbsp;технологии</span>
+      </div>
+      <!-- /.header__logo -->
+
+      <form class="header__search search" action="#">
+        <label for="search">
+          <input class="search__input" id="search" type="search" placeholder="Поиск товаров..">
+        </label>
+      </form>
+      <!-- /.header__search -->
+
+      <div class="header__buttons">
+        <a href="#"><img src="img/header/icons/delivery.svg" alt="Доставка"></a>
+        <a href="#"><img src="img/header/icons/user.svg" alt="Личный кабинет"></a>
+        <a class="header__buttons_cart" href="#"><img src="img/header/icons/cart.svg" alt="Корзина"></a>
+      </div>
+      <!-- /.header__buttons -->
     </div>
-  </header>
+    <!-- /.header__top -->
 
-  <main>
-    <div class="container">
-
+    <div class="header__bottom">
+      <a class="header__contacts header__contacts_location" href="">Екатеринбург</a>
+      <a class="header__contacts header__contacts_phone" href="tel:+74955063650">+7 (495) 506-36-50</a>
+      <a class="header__contacts header__contacts_mail" href="mailto:office@uconerfo.ru">office@uconerfo.ru</a>
+      <a class="header__contacts header__contacts_request" href="">Заявка на расчет</a>
+      <a class="header__contacts header__contacts_contacts" href="">Контакты</a>
     </div>
-  </main>
+    <!-- /.header__bottom -->
+  </div>
+</header>
+<!-- /.header -->
 
-  <footer class="footer">
-    <div class="container">
-
+<aside class="banner">
+  <div class="container banner__container">
+    <div class="banner__promo">
+      <p class="banner__title">Дозаторы и антисептики</p>
+      <p class="banner__description">Устанавливаются в общественных местах для предотвращения распространения вирусов
+        микробов</p>
     </div>
-  </footer>
+    <img class="banner__img" src="img/aside/banner-bg.png" alt="">
+    <a class="banner__button" href="#">Подробнее</a>
+  </div>
+</aside>
+<!-- /.banner -->
+
+<main class="main">
+  <div class="container">
+    <div class="main__bread-crumbs">
+      <a href="#">Главная</a>
+      &nbsp;&nbsp;/&nbsp;&nbsp;
+      <a>Отопительное оборудование</a>
+    </div>
+    <!-- /.main__bread-crumbs -->
+
+    <section>
+      <p class="main__title">Отопительное оборудование</p>
+
+      <div class="main__catalog">
+        <div class="main__filters filters">
+          <div class="filters__head">
+            <p class="filters__title">Фильтры</p>
+            <button class="filters__reset" type="reset" form="filter">Сбросить</button>
+          </div>
+          <!-- /.filters__head -->
+
+          <div class="filters__body">
+            <form action="" id="filter">
+              <fieldset class="filters__category filter">
+                <legend class="filters__category-heading">Отопительное оборудование</legend>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Оборудование" id="filter__1-1" value="Радиаторы отопления">
+                <label class="filter__label" for="filter__1-1">Радиаторы отопления</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Оборудование" id="filter__1-2" value="Конвекторы отопления">
+                <label class="filter__label" for="filter__1-2">Конвекторы отопления</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Оборудование" id="filter__1-3" value="Полотенцесушители">
+                <label class="filter__label" for="filter__1-3">Полотенцесушители</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Оборудование" id="filter__1-4" value="Арматура для радиаторов">
+                <label class="filter__label" for="filter__1-4">Арматура для радиаторов</label>
+              </fieldset>
+              <!-- /.filter -->
+
+              <fieldset class="filters__category filter">
+                <legend class="filters__category-heading">Бренд</legend>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Бренд" id="filter__2-1" value="Purmo">
+                <label class="filter__label" for="filter__2-1">Purmo</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Бренд" id="filter__2-2" value="Irsap">
+                <label class="filter__label" for="filter__2-2">Irsap</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Бренд" id="filter__2-3" value="Terma">
+                <label class="filter__label" for="filter__2-3">Terma</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Бренд" id="filter__2-4" value="Loten">
+                <label class="filter__label" for="filter__2-4">Loten</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Бренд" id="filter__2-5" value="Guardo">
+                <label class="filter__label" for="filter__2-5">Guardo</label>
+              </fieldset>
+              <!-- /.filter -->
+
+              <fieldset class="filters__category filter">
+                <legend class="filters__category-heading">Количество секций</legend>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Количество секций" id="filter__4-1" value="4">
+                <label class="filter__label" for="filter__4-1">4</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Количество секций" id="filter__4-2" value="6">
+                <label class="filter__label" for="filter__4-2">6</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Количество секций" id="filter__4-3" value="8">
+                <label class="filter__label" for="filter__4-3">8</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Количество секций" id="filter__4-4" value="12">
+                <label class="filter__label" for="filter__4-4">12</label>
+              </fieldset>
+              <!-- /.filter -->
+
+              <fieldset class="filters__category filter">
+                <legend class="filters__category-heading">Межосевое расстояние</legend>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Межосевое расстояние" id="filter__5-1" value="20 см">
+                <label class="filter__label" for="filter__5-1">20 см</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Межосевое расстояние" id="filter__5-2" value="35 см">
+                <label class="filter__label" for="filter__5-2">35 см</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Межосевое расстояние" id="filter__5-3" value="50 см">
+                <label class="filter__label" for="filter__5-3">50 см</label>
+              </fieldset>
+              <!-- /.filter -->
+
+              <fieldset class="filters__category filter">
+                <legend class="filters__category-heading">Площадь отопления</legend>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Площадь отопления" id="filter__6-1" value="Более 19 м²">
+                <label class="filter__label" for="filter__6-1">Более 19 м²</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Площадь отопления" id="filter__6-2" value="Менее 8 м²">
+                <label class="filter__label" for="filter__6-2">Менее 8 м²</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Площадь отопления" id="filter__6-3" value="от 10 до 14 м²">
+                <label class="filter__label" for="filter__6-3">от 10 до 14 м²</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Площадь отопления" id="filter__6-4" value="от 15 до 26 м²">
+                <label class="filter__label" for="filter__6-4">от 15 до 26 м²</label>
+              </fieldset>
+              <!-- /.filter -->
+
+              <fieldset class="filters__category filter">
+                <legend class="filters__category-heading">Цвет</legend>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-1" value="Красный">
+                <label class="filter__label" for="filter__7-1">Красный</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-2" value="Желтый">
+                <label class="filter__label" for="filter__7-2">Желтый</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-3" value="Зеленый">
+                <label class="filter__label" for="filter__7-3">Зеленый</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-4" value="Синий">
+                <label class="filter__label" for="filter__7-4">Синий</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-5" value="Фиолетовый">
+                <label class="filter__label" for="filter__7-5">Фиолетовый</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-6" value="Розовый">
+                <label class="filter__label" for="filter__7-6">Розовый</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-7" value="Бежевый">
+                <label class="filter__label" for="filter__7-7">Бежевый</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-8" value="Белый">
+                <label class="filter__label" for="filter__7-8">Белый</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-9" value="Черный">
+                <label class="filter__label" for="filter__7-9">Черный</label>
+
+                <input class="filter__item visually-hidden" type="checkbox" name="Цвет" id="filter__7-10" value="Серый">
+                <label class="filter__label" for="filter__7-10">Серый</label>
+              </fieldset>
+              <!-- /.filter -->
+            </form>
+          </div>
+          <!-- /.filters__body -->
+        </div>
+        <!-- /.main__filters -->
+
+        <div class="main__selection">
+          <div class="main__sort">
+            <p class="main__compil"><b>2394</b> товаров</p>
+            <!-- /.main__compil -->
+
+            <div class="main__sorting">
+              <label for="sort">Цена:</label>
+              <select name="Сортировка" id="sort">
+                <option value="increase">По возрастанию</option>
+                <option value="decrease">По убыванию</option>
+              </select>
+            </div>
+            <!-- /.main__sorting -->
+          </div>
+          <!-- /.main__sort -->
+
+          <div class="main__cards">
+            <div class="main__card card">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card card_promo">
+              <div class="card_promo-label"><span>Акция</span></div>
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <del class="card__cost">5 890 <sup>₽</sup></del>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card card_promo">
+              <div class="card_promo-label"><span>Акция</span></div>
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <del class="card__cost">5 890 <sup>₽</sup></del>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card card_hidden">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card card_hidden">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card card_hidden">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card card_hidden">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card card_hidden">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card card_hidden">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+
+            <div class="main__card card card_hidden">
+              <p class="card__title">Биметаллический радиатор Royal Thermo Indigo Super</p>
+              <span class="card__cost">4 250 <sup>₽</sup></span>
+              <button class="card__button"></button>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.main__cards -->
+          <button class="main__show-more">Показать еще</button>
+        </div>
+        <!-- /.main__selection -->
+      </div>
+      <!-- /.main__catalog -->
+
+      <div class="main__seo">
+        <p>Длинный или короткий заголовок SEO текста</p>
+        <div>
+          <p>Интернет-магазин автоматической водосберегающей сантехники и дизайн радиаторов отопления <br> Сантехническое и отопительное оборудование - основные продукты интернет-магазина "Экон Урфо". <br> На сайте urfoecon.ru, вы можете выбрать и купить автоматическую водосберегающую сантехнику и дизайн радиаторы отопления. На сайте urfoecon.ru, вы можете выбрать: смесители, душевые, смывные устройства для унитазов и писсуаров, а так же дополнительные товары: сушилки для рук, дозаторы мыла, фены для волос, держатели туалетной бумаги, ведра и другое.</p>
+          <p>Преимущества автоматической водосберегающей сантехники — экономия денег и воды! Результат будет заметен с первого месяца установки. Обратитесь к нашим специалистам и узнайте вашу выгоду при использовании автоматической водосберегающей сантехники. Звоните или оставляйте заявку на расчет.</p>
+        </div>
+        <p>Подзаголовок внутри текста</p>
+        <div>
+          <p>На сайте urfoecon.ru, вы можете выбрать красивые современные модели радиаторов отопления Европейских и Российских производителей. Радиаторы представленные в каталоге,изготовлены из прочных материалов: сталь, алюминий и биметалл. Мы уверены в качестве нашей продукции и предоставляем гарантию до 25 лет на радиаторы отопления. В нашем ассортименте: водяные и электрические радиаторы, высокие, средние и низкие, узкие и широкие, трубчатые и панельные модели, стандартные белые, черные, бежевые и любые цвета по шкале RAL.</p>
+          <p>Обратитесь к нашим специалистам и подберите радиаторы, которые гармонично впишутся в ваш интерьер и будут эффективно обогревать ваш дом. Звоните или оставляйте заявку на расчет.</p>
+        </div>
+      </div>
+      <!-- /.main__seo -->
+    </section>
+  </div>
+</main>
+<!-- /.main -->
+
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__columns">
+      <div class="footer__column">
+        <div class="footer__logo logo">
+          <img class="logo__img" src="img/header/icons/logo-1.svg" alt="Логотип: ЭконУрфо">
+          <img class="logo__title" src="img/header/icons/logo-2.svg" alt="Логотип: ЭконУрфо">
+          <span class="logo__subtitle">Энергосберегающие&nbsp;&nbsp;технологии</span>
+        </div>
+        <!-- /.footer__logo -->
+
+        <div class="footer__timetable">
+          <a href="tel:+74955063650">+7 (495) 506-36-50</a>
+          <p>Пн-Пт:<time>с 08:00 до 19:00</time></p>
+          <p>Сб-Вс:<time>с 08:00 до 16:00</time></p>
+        </div>
+        <!-- /.footer__timetable -->
+
+        <a class="footer__mail" href="mailto:office@uconerfo.ru">office@uconerfo.ru</a>
+
+        <div class="footer__social">
+          <p class="footer__social-title">Мы в сети</p>
+          <a class="footer__social-link footer__social-link_vk" href="https://vk.com">ВКонтакте</a>
+          <a class="footer__social-link footer__social-link_insta" href="https://www.instagram.com">Instagram</a>
+        </div>
+        <!-- /.footer__social -->
+      </div>
+      <!-- /.footer__column -->
+
+      <div class="footer__column catalog">
+        <p class="catalog__title">Категории продукции</p>
+        <ul class="catalog__list">
+          <li class="catalog__item"><a class="catalog__link" href="#">Трубчатые радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Панельные радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Полотенцесушители</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Вертикальные радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Дизайн радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Внутрипольные конвекторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Конвекторы водяные</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Водосберегающая сантехника</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Теплый пол</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Чугунные дизайн радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Арматура для радиаторов</a></li>
+        </ul>
+      </div>
+      <!-- /.catalog -->
+
+      <div class="footer__column catalog">
+        <p class="catalog__title">Категории продукции</p>
+        <ul class="catalog__list">
+          <li class="catalog__item"><a class="catalog__link" href="#">Трубчатые радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Панельные радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Полотенцесушители</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Вертикальные радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Дизайн радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Внутрипольные конвекторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Конвекторы водяные</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Водосберегающая сантехника</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Теплый пол</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Чугунные дизайн радиаторы</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Арматура для радиаторов</a></li>
+        </ul>
+      </div>
+      <!-- /.catalog -->
+
+      <div class="footer__column catalog">
+        <p class="catalog__title">Информация</p>
+        <ul class="catalog__list">
+          <li class="catalog__item"><a class="catalog__link" href="#">О компании</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Готовые решения</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Наша продукция</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Цвета</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Сертификаты</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Доставка и оплата</a></li>
+          <li class="catalog__item"><a class="catalog__link" href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <!-- /.catalog -->
+    </div>
+    <!-- /.footer__columns -->
+
+    <div class="footer__copy">
+      <p class="footer__copyright">Copyright © 2014 - 2020</p>
+      <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+      <a class="footer__personal" href="#">Обработка персональной информации</a>
+      <div class="footer__developer">
+        <p>Разработано</p>
+        <span><b>Request</b> Design</span>
+      </div>
+    </div>
+    <!-- /.footer__copy -->
+  </div>
+</footer>
+<!-- /.footer -->
 
 </body>
 </html>

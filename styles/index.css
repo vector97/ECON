@@ -6,4 +6,6 @@
 
 /* Blocks */
 @import 'header/header.css';
+@import 'aside/aside.css';
+@import 'main/main.css';
 @import 'footer/footer.css';

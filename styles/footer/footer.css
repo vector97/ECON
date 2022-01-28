@@ -1,3 +1,267 @@
 .footer {
-    background-color: rgb(34, 7, 7);
+  background-color: #ffffff;
+  padding-top: 49px;
+  padding-bottom: 33px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 25px;
+  border-bottom: 1px solid rgba(217, 218, 225, 0.8);
+  padding-bottom: 57px;
+  margin-bottom: 43px;
+}
+
+.footer__logo {
+  margin-bottom: 57px;
+}
+
+.footer__timetable {
+  margin-bottom: 51px;
+}
+
+.footer__timetable a {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.footer__timetable a::before {
+  content: '';
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 13px;
+  width: 21px;
+  height: 21px;
+  background-image: url('../../img/footer/icons/phone.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 19px;
+}
+
+.footer__timetable p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #7e838c;
+}
+
+.footer__mail {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.footer__mail::before {
+  content: '';
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 11px;
+  width: 21px;
+  height: 21px;
+  background-image: url('../../img/footer/icons/mail.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
+
+.footer__social-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 21px;
+}
+
+.footer__social-link {
+  font-family: Gilroy, sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  color: #7E838C;
+}
+
+.footer__social-link_vk {
+  margin-right: 25px;
+}
+
+.footer__social-link::before {
+  content: '';
+  display: inline-block;
+  vertical-align: text-top;
+  width: 21px;
+  height: 21px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__social-link_vk::before {
+  margin-right: 11px;
+  background-image: url('../../img/footer/icons/vk.svg');
+}
+
+.footer__social-link_insta::before {
+  margin-right: 10px;
+  background-image: url('../../img/footer/icons/inst.svg');
+}
+
+
+/* catalog */
+
+.catalog__title {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.catalog__link {
+  font-size: 16px;
+  line-height: 33px;
+  color: #7E838C;
+}
+
+.footer__copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px 15px;
+  flex-wrap: wrap;
+}
+
+.footer__copyright,
+.footer__privacy,
+.footer__personal,
+.footer__developer {
+  font-size: 16px;
+  line-height: 20px;
+  color: #7E838C;
+}
+
+.footer__developer {
+  display: flex;
+  align-items: center;
+}
+
+.footer__developer p {
+  margin-right: 1px;
+}
+
+.footer__developer span {
+  font-family: Circe, sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #2B2E34;
+}
+
+.footer__developer span::before {
+  content: '';
+  display: inline-block;
+  background-image: url('../../img/footer/icons/developer.svg');
+  width: 31px;
+  height: 31px;
+  vertical-align: bottom;
+  margin-right: 7px;
+  margin-left: 17px;
+}
+
+.footer__developer b {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .footer__columns {
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  .footer__column {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 610px) {
+  .footer__columns {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer__column {
+    flex-basis: 280px;
+  }
+
+  .catalog__title {
+    margin-bottom: 16px;
+  }
+
+  .footer__copy {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px 15px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 415px) {
+  .footer {
+    padding-top: 45px;
+    padding-bottom: 46px;
+  }
+
+  .footer__columns {
+    gap: 0;
+    padding-bottom: 37px;
+    margin-bottom: 60px;
+  }
+
+  .footer__column:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
+  .footer__column:first-child {
+    margin-bottom: 60px;
+  }
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
+  .footer__timetable {
+    margin-bottom: 43px;
+  }
+
+  .footer__timetable time {
+    margin-left: 8px;
+  }
+
+  .footer__mail::before {
+    margin-bottom: 42px;
+    margin-right: 13px;
+  }
+
+  .footer__social-title {
+    margin-bottom: 20px;
+    margin-left: -2px;
+  }
+
+  .footer__social-link_vk {
+    margin-right: 18px;
+  }
+
+  .footer__social-link_insta::before {
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer__copy {
+    row-gap: 30px;
+  }
+
+  .footer__developer {
+    margin-top: 30px;
+  }
 }

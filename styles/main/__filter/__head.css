@@ -1,0 +1,37 @@
+/* filters__head */
+
+.filters__head {
+  padding: 30px;
+}
+
+.filters__title {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.filters__reset {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #7E838C;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  position: absolute;
+  top: 33px;
+  right: 30px;
+}
+
+.filters__reset::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  background-image: url('../../../img/main/icons/reset.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 14px;
+}

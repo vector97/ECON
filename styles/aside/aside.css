@@ -1,0 +1,90 @@
+/* banner */
+
+.banner {
+  background: linear-gradient(91.79deg, #1DBCD1 16.94%, #3DDCF1 83.14%);
+  margin-bottom: 46px;
+}
+
+.banner__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__promo {
+  flex-basis: 580px;
+  color: #ffffff;
+}
+
+.banner__title {
+  font-size: 42px;
+  line-height: 53px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.banner__description {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.banner__img {
+  margin-left: -174px;
+}
+
+.banner__button::before {
+  content: '';
+  display: inline-block;
+  width: 41px;
+  height: 11px;
+  background-image: url('../../img/aside/icons/details.svg');
+  background-size: contain;
+  margin-right: 36px;
+}
+
+.banner__button {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 28px 50px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 415px) {
+  .banner__container {
+    flex-direction: column;
+    padding-top: 41px;
+  }
+
+  .banner__promo {
+    flex-basis: auto;
+  }
+
+  .banner__title {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .banner__description {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 52px;
+  }
+
+  .banner__img {
+    order: 1;
+    margin-left: -83px;
+  }
+
+  .banner__button {
+    padding: 17px 35px 17px 37px;
+    margin-bottom: 30px;
+  }
+}

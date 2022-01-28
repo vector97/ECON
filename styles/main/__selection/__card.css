@@ -1,0 +1,167 @@
+/* card */
+
+.card {
+  padding: 30px;
+  border-radius: 2px;
+  flex-basis: 354px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card:nth-child(3n + 1) {
+  background-image: url('../../../img/main/card/card-01.png');
+  background-position: top 6px center;
+}
+
+.card:nth-child(3n + 2) {
+  background-image: url('../../../img/main/card/card-02.png');
+  background-position: top 17px center;
+}
+
+.card:nth-child(3n + 3) {
+  background-image: url('../../../img/main/card/card-03.png');
+  background-position: top 37px center;
+}
+
+.card_promo-label {
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8px 21px 9px 43px;
+  border-top-left-radius: 2px;
+  background-color: #f31b4f;
+  background-image: url('../../../img/main/card/card_promo.svg');
+  background-position: left 17px center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card__title {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  margin-top: 307px;
+  margin-bottom: 44px;
+}
+
+.card__cost {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.card__cost sup {
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+del.card__cost {
+  font-size: 15px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #7e838c;
+  margin-left: 13px;
+  position: relative;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+del.card__cost::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #f31b4f;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: rotate(-10deg);
+}
+
+del.card__cost sup {
+  font-size: 8px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.card__button {
+  width: 82px;
+  height: 82px;
+  background-color: #38d3e8;
+  background-image: url('../../../img/main/card/in-cart.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: none;
+}
+
+@media (max-width: 415px) {
+  .card {
+    padding: 15px;
+    max-width: 177px;
+    background-size: contain;
+  }
+
+  .card_hidden {
+    display: none;
+  }
+
+  .card:nth-child(3n + 1) {
+    background-position: top 5px center;
+  }
+
+  .card_promo-label {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 8px 13px 6px 30px;
+    background-position: left 8px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .card__title {
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 210px;
+    margin-bottom: 24px;
+  }
+
+  .card__cost {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .card__cost sup {
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  del.card__cost {
+    font-size: 12px;
+    line-height: 11px;
+    margin-left: 6px;
+    padding: 0 7px;
+  }
+
+  .card__button {
+    width: 43px;
+    height: 43px;
+    background-image: url('../../../img/main/card/in-cart.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+  }
+}

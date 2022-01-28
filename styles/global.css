@@ -20,6 +20,10 @@ body {
   background-color: var(--main-bg);
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -70,4 +74,10 @@ iframe {
   max-width: 1580px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
 }

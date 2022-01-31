@@ -654,3 +654,65 @@ del.card__cost sup {
     display: none;
   }
 }
+
+/* slider-count */
+
+.slider-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.ui-slider {
+  background: #dee1e8;
+  height: 4px;
+  position: relative;
+  border-radius: 100px;
+}
+
+.ui-slider-range {
+  background: #38d3e8;
+  height: 4px;
+  position: relative;
+}
+
+.ui-slider-handle {
+  background: #38d3e8;
+  position: absolute;
+  width: 4px;
+  height: 23px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  cursor: grab;
+  transition: width 0.3s ease;
+}
+
+.ui-slider-handle:focus {
+  outline: none;
+}
+
+.ui-state-active {
+  width: 22px;
+}
+
+.range-wrapper {
+  position: absolute;
+  top: 18px;
+  left: 100px;
+  transform: translateX(-50%);
+
+}
+
+.range {
+  font-size: 14px;
+  line-height: 18px;
+  width: 150px;
+}
+
+.range-value {
+  width: 74px;
+  padding: 8px 0;
+  text-align: center;
+  display: inline-block;
+  transition: background 0.1s;
+}

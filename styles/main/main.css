@@ -698,9 +698,7 @@ del.card__cost sup {
 .range-wrapper {
   position: absolute;
   top: 18px;
-  left: 100px;
-  transform: translateX(-50%);
-
+  left: 0;
 }
 
 .range {

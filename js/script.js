@@ -43,6 +43,32 @@ if (arrowsFilter) {
   })
 }
 
+// Мобильный фильтр
+
+const openFilter = document.querySelectorAll('.filters__title_mobile')
+if (openFilter) {
+  const filterBody = document.querySelector('.filters__body')
+  openFilter.forEach((arrow) => {
+    arrow.addEventListener('click', () => {
+      openFilter.forEach((arrowItem, idx) => {
+        if (arrowItem === arrow) {
+          document.body.classList.toggle('body_lock')
+          filterBody.classList.toggle('filters__body_open')
+        }
+      })
+    })
+  })
+}
+
+// const openFilter = document.querySelectorAll('.filters__title_mobile')
+// if (openFilter) {
+//   const filterBody = document.querySelector('.filters__body')
+//   openFilter.addEventListener('click', function () {
+//     document.body.classList.toggle('body_lock')
+//     filterBody.classList.toggle('filters__body_open')
+//   });
+// }
+
 // Кнопка показать ещё
 
 let showMore = document.querySelectorAll('.main__show-more');

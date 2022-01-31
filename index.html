@@ -88,6 +88,7 @@
               </div>
               <!-- /.menu__column -->
             </nav>
+            <!-- /.menu__body-nav -->
           </div>
         </div>
         <!-- /.menu__body -->
@@ -108,10 +109,18 @@
       </form>
       <!-- /.header__search -->
 
-      <div class="header__buttons">
+      <div class="header__buttons header__buttons_pc">
         <a href="#"><img src="img/header/icons/delivery.svg" alt="Доставка"></a>
         <a href="#"><img src="img/header/icons/user.svg" alt="Личный кабинет"></a>
         <a class="header__buttons_cart" href="#"><img src="img/header/icons/cart.svg" alt="Корзина"></a>
+      </div>
+      <!-- /.header__buttons_pc -->
+
+      <div class="header__buttons header__buttons_mobile">
+        <a href="tel:+74955063650"><img src="img/header/icons/phone.svg" alt="Позвонить"></a>
+        <a href="#"><img src="img/header/icons/user.svg" alt="Личный кабинет"></a>
+        <a class="header__buttons_cart" href="#"><img src="img/header/icons/cart.svg" alt="Корзина"></a>
+        <!-- /.header__buttons_mobile -->
       </div>
       <!-- /.header__buttons -->
     </div>
@@ -156,14 +165,26 @@
 
       <div class="main__catalog">
         <div class="main__filters filters">
-          <div class="filters__head">
+          <div class="filters__head filters__head_pc">
             <p class="filters__title">Фильтры</p>
             <button class="filters__reset" type="reset" form="filter">Сбросить</button>
           </div>
-          <!-- /.filters__head -->
+          <!-- /.filters__head_pc -->
+
+          <div class="filters__head filters__head_mobile">
+            <p class="filters__title filters__title_mobile">Фильтры</p>
+            <div class="main__sorting">
+              <select name="Сортировка" id="sort_mb">
+                <option value="increase">По возрастанию</option>
+                <option value="decrease">По убыванию</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.filters__head_mobile -->
 
           <div class="filters__body">
-            <form action="" id="filter">
+            <form class="filters__form" action="" id="filter">
+              <p class="filters__title filters__title_mobile filters__title_open">Фильтры</p>
               <fieldset class="filters__category filter">
                 <legend class="filters__category-heading">Отопительное оборудование</legend>
 
@@ -283,14 +304,22 @@
                 <label class="filter__label" for="filter__7-10">Серый</label>
               </fieldset>
               <!-- /.filter -->
+
+
             </form>
+
+            <div class="filters__buttons filters__buttons_mobile">
+              <button class="filters__apply" form="filter">Применить</button>
+              <button class="filters__reset filters__reset_mobile" form="filter" type="reset">Сбросить</button>
+            </div>
+            <!-- /.filters__buttons -->
           </div>
           <!-- /.filters__body -->
         </div>
         <!-- /.main__filters -->
 
         <div class="main__selection">
-          <div class="main__sort">
+          <div class="main__sort main__sort_mobile">
             <p class="main__compil"><b>2394</b> товаров</p>
             <!-- /.main__compil -->
 

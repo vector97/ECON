@@ -66,6 +66,7 @@
 }
 
 .menu__body-nav {
+  padding: 0 30px 100px 30px;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -100,6 +101,10 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+}
+
+.menu__title span {
+  padding-right: 15px;
 }
 
 .menu__title_close {

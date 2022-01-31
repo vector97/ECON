@@ -696,7 +696,7 @@ del.card__cost sup {
 }
 
 .range-wrapper {
-  position: absolute;
+  position: relative;
   top: 18px;
   left: 0;
 }
@@ -704,7 +704,9 @@ del.card__cost sup {
 .range {
   font-size: 14px;
   line-height: 18px;
-  width: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .range-value {

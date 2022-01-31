@@ -99,19 +99,10 @@ $(function() {
   });
 
   // Move the range wrapper into the generated divs
-  $('.ui-slider-range').append($('.range-wrapper'));
+  $('.ui-slider-range').append($('.slider-range'));
 
   // Apply initial values to the range container
   $('.range').html('<span class="range-value">' + $('#slider-range').slider("values", 0).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + '<sup>₽</sup></span><span class="range-divider"></span><span class="range-value">' + $("#slider-range").slider("values", 1).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + '<sup>₽</sup></span>');
-
-
-
-
-  // Rotate the gears
-  var gearOneAngle = 0,
-    gearTwoAngle = 0,
-    rangeWidth = $('.ui-slider-range').css('width');
-
 
   $('#slider-range').slider({
     slide: function(event, ui) {

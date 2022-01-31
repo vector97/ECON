@@ -60,10 +60,13 @@
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  padding: 100px 30px 30px 30px;
   transition: top 0.3s ease 0s;
   overflow: auto;
   z-index: 2;
+}
+
+.menu__body-nav {
+  padding: 100px 30px 30px 30px;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -171,8 +174,8 @@
 /* media 415px */
 
 @media (max-width: 415px) {
-  .menu__body {
-    padding-top: 59px;
+  .menu__body-nav {
+    padding: 59px 0 20px 0;
     flex-direction: column;
     justify-content: flex-start;
   }

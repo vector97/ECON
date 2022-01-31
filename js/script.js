@@ -3,11 +3,28 @@
 const iconMenu = document.querySelector('.menu__icon')
 if (iconMenu) {
   const menuBody = document.querySelector('.menu__body')
-  iconMenu.addEventListener('click', function (e) {
-    document.body.classList.toggle('_lock')
-    iconMenu.classList.toggle('_active')
-    menuBody.classList.toggle('_active')
+  iconMenu.addEventListener('click', function () {
+    document.body.classList.toggle('body_lock')
+    iconMenu.classList.toggle('menu__icon_active')
+    menuBody.classList.toggle('menu__body_active')
   });
+}
+
+// Выпадающие списки меню
+
+const arrowsMenu = document.querySelectorAll('.menu__title')
+if (arrowsMenu) {
+  const menuList = document.querySelectorAll('.menu__list')
+  arrowsMenu.forEach((arrow) => {
+    arrow.addEventListener('click', () => {
+      arrowsMenu.forEach((arrowItem, idx) => {
+        if (arrowItem === arrow) {
+          arrowsMenu[idx].classList.toggle('menu__title_close')
+          menuList[idx].classList.toggle('menu_close')
+        }
+      })
+    })
+  })
 }
 
 // Выпадающие фильтры
@@ -15,7 +32,7 @@ if (iconMenu) {
 const arrowsFilter = document.querySelectorAll('.filters__category-heading')
 if (arrowsFilter) {
   const filter = document.querySelectorAll('.filter')
-  arrowsFilter.forEach((arrow, index) => {
+  arrowsFilter.forEach((arrow) => {
     arrow.addEventListener('click', () => {
       arrowsFilter.forEach((arrowItem, idx) => {
         if (arrowItem === arrow) {

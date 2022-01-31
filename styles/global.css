@@ -20,7 +20,7 @@ body {
   background-color: var(--main-bg);
 }
 
-body._lock {
+.body_lock {
   overflow: hidden;
 }
 

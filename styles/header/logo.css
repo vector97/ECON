@@ -1,0 +1,28 @@
+/* logo */
+
+.logo {
+  width: 275px;
+  display: grid;
+  grid-template-areas:
+    'logo title'
+    'logo subtitle';
+  align-items: center;
+  column-gap: 18px;
+}
+
+.logo__img {
+  grid-area: logo;
+}
+
+.logo__title {
+  grid-area: title;
+  align-self: end;
+}
+
+.logo__subtitle {
+  grid-area: subtitle;
+
+  font-size: 13px;
+  line-height: 16px;
+  color: #555555;
+}

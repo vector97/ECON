@@ -60,15 +60,6 @@ if (openFilter) {
   })
 }
 
-// const openFilter = document.querySelectorAll('.filters__title_mobile')
-// if (openFilter) {
-//   const filterBody = document.querySelector('.filters__body')
-//   openFilter.addEventListener('click', function () {
-//     document.body.classList.toggle('body_lock')
-//     filterBody.classList.toggle('filters__body_open')
-//   });
-// }
-
 // Кнопка показать ещё
 
 let showMore = document.querySelectorAll('.main__show-more');
@@ -118,11 +109,6 @@ $(function() {
       $(this).data({
         'value': parseInt(ui.value)
       });
-
-      }
-
+    }
   });
-
-
-
 });

@@ -200,3 +200,11 @@
     display: none;
   }
 }
+
+/* media 409px */
+
+@media (max-width: 409px) {
+  .header__buttons {
+    gap: 10px;
+  }
+}
